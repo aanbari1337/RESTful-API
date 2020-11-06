@@ -1,12 +1,16 @@
 const express  = require('express')
+const moongose = require('mongoose')
 const Joi = require('joi')
 const router = express.Router()
 
-const genres = [
-    {id: 1, name:'Action'},
-    {id: 2, name:'Horror'},
-    {id: 3, name:'Romance'},
-]
+const Genre =new moongose.model('Genre', new moongose.Schema({
+    name:{
+        type: String,
+        required: true,
+        minlength: 3,
+        maxlength: 50
+    }
+}))
 
 router.get('/', (req, res)=>{
     res.send(genres)
