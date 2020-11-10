@@ -1,17 +1,16 @@
 const moongose = require("mongoose");
 const Joi = require("joi");
 
-const Genre = moongose.model(
-  "Genre",
-  new moongose.Schema({
-    name: {
-      type: String,
-      required: true,
-      minlength: 3,
-      maxlength: 50,
-    },
-  })
-);
+const genreSchema = new moongose.model({
+  name: {
+    type: String,
+    required: true,
+    minlength: 3,
+    maxlength: 50,
+  },
+});
+
+const Genre = moongose.model("Genre", genreSchema);
 
 function validateGenre(genre) {
   const schema = Joi.object({
@@ -21,5 +20,6 @@ function validateGenre(genre) {
   return schema.validate(genre);
 }
 
-module.exports.Genre = Genre
-module.exports.validate = validateGenre
+module.exports.genreSchema = genreSchema;
+module.exports.Genre = Genre;
+module.exports.validate = validateGenre;
