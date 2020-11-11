@@ -1,13 +1,12 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
-const { json } = require("express");
-const { string } = require("joi");
+
 
 const Rental = mongoose.model(
   "Rental",
   new mongoose.Schema({
     customer: {
-      type: new moongose.Schema({
+      type: new mongoose.Schema({
         name: {
           type: String,
           required: true,
@@ -28,7 +27,7 @@ const Rental = mongoose.model(
       required: true,
     },
     movie: {
-      type: new moongose.Schema({
+      type: new mongoose.Schema({
         title: {
           type: String,
           required: true,
@@ -62,9 +61,12 @@ const Rental = mongoose.model(
 
 function validateRental(rental) {
     const schema = Joi.object({
-        customerId: Joi.string().required(),
-        movieid: Joi.string().required()
+        customerId: Joi.objectId().required(),
+        movieId: Joi.objectId().required()
     })
 
     return schema.validate(rental)
 }
+
+exports.Rental = Rental
+exports.validate = validateRental

@@ -1,5 +1,5 @@
 const express = require("express");
-const moongose = require("mongoose");
+const mongoose = require("mongoose");
 const {Genre, validate} = require('../models/genre')
 
 const router = express.Router();
@@ -15,10 +15,10 @@ router.post("/", async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  let genre = new Genre({
+  const genre = new Genre({
     name: req.body.name,
   });
-  genre = await genre.save(genre);
+  await genre.save(genre);
   res.send(genre);
 });
 
