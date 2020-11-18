@@ -3,6 +3,8 @@ const _ = require('lodash')
 const express = require("express");
 const mongoose = require("mongoose");
 const {User, validate} = require('../models/user')
+const config = require("config");
+const jwt = require('jsonwebtoken')
 
 const router = express.Router();
 
@@ -25,7 +27,9 @@ router.post("/", async (req, res) => {
   user.password = await bcrypt.hash(user.password, salt)
 
   await user.save();
-  res.send(_.pick(user, ['name','email']));
+
+  const token = user.generateToken()
+  res.header('x-auth-token',token).send(_.pick(user, ['name','email']));
 });
 
 module.exports = router;
