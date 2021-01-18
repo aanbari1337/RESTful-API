@@ -20,7 +20,7 @@ Joi.objectId = require("joi-objectid")(Joi);
 app.use(express.json());
 mongoose
   .connect(
-    "mongodb+srv://aanbari:MJAocyUpUidaPiIR@restfulapi.b0q7e.mongodb.net/DbRestfulApi?retryWrites=true&w=majority",
+    "",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
