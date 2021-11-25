@@ -9,12 +9,9 @@ const router = express.Router();
 
 
 router.get("/", async (req, res, next) => {
-  try {
+  throw new Error('something went wrong')
     const genres = await Genre.find().sort("name");
     res.send(genres);  
-  } catch (ex) {
-    next(ex)
-  }
 });
 
 router.post("/", auth, async (req, res) => {

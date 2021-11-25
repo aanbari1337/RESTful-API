@@ -1,3 +1,6 @@
+require('express-async-errors');
+const winston = require('./util/logger')
+const morgan = require('morgan')
 const express = require("express");
 const genres = require("./routes/genres");
 const customers = require("./routes/customers");
@@ -9,26 +12,30 @@ const mongoose = require("mongoose");
 const Joi = require("joi");
 const config = require("config");
 const error = require("./middleware/error");
-
-const app = express();
-if (!config.get("jwtPrivateKey")) {
-  console.log("FATAL ERROR");
-  process.exit(1);
-}
 Joi.objectId = require("joi-objectid")(Joi);
+
+
+
+const app = express()
+const jwtPrivateKey = config.get("jwtPrivateKey")
+const dbURL = config.get('dbURL')
+if (!jwtPrivateKey || !dbURL) {
+  console.log("FATAL ERROR");
+  process.exit(1)
+}
 
 app.use(express.json());
 mongoose
-  .connect(
-    "*************",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+.connect(dbURL,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
   )
   .then(() => console.log("connected to mongodb"))
   .catch(() => console.log("couldn't connect"));
-
+  
+app.use(morgan('combined', { stream: winston.stream }));
 app.use("/api/genres", genres);
 app.use("/api/customers", customers);
 app.use("/api/movies", movies);
