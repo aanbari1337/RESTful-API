@@ -1,0 +1,169 @@
+2021-11-27T23:31:36.518Z [right meow!] error: uncaughtException: dbURL is not defined
+ReferenceError: dbURL is not defined
+    at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+    at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+undefined [undefined] error: uncaughtException: dbURL is not defined
+ReferenceError: dbURL is not defined
+    at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+    at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+2021-11-27T23:32:25.507Z [right now!] error: uncaughtException: dbURL is not defined
+ReferenceError: dbURL is not defined
+    at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+    at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+2021-11-27T23:32:41.313Z error: uncaughtException: dbURL is not defined
+ReferenceError: dbURL is not defined
+    at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+    at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+2021-11-27T23:32:44.434Z error: uncaughtException: dbURL is not defined
+ReferenceError: dbURL is not defined
+    at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+    at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+{ error:
+   ReferenceError: dbURL is not defined
+       at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+       at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+       at Module._compile (internal/modules/cjs/loader.js:778:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+       at Module.load (internal/modules/cjs/loader.js:653:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+       at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+       at startup (internal/bootstrap/node.js:283:19)
+       at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3),
+  level: 'error',
+  message:
+   'uncaughtException: dbURL is not defined\nReferenceError: dbURL is not defined\n    at module.exports (C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\startup\\db.js:8:14)\n    at Object.<anonymous> (C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\index.js:6:24)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)',
+  stack:
+   'ReferenceError: dbURL is not defined\n    at module.exports (C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\startup\\db.js:8:14)\n    at Object.<anonymous> (C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\index.js:6:24)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)',
+  exception: true,
+  date: 'Sun Nov 28 2021 00:33:52 GMT+0100 (GMT+01:00)',
+  process:
+   { pid: 3132,
+     uid: null,
+     gid: null,
+     cwd: 'C:\\Users\\pro\\Desktop\\WORK\\RESTful-API',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.17.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\index.js' ],
+     memoryUsage:
+      { rss: 55730176,
+        heapTotal: 37994496,
+        heapUsed: 19911728,
+        external: 18646082 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 113699 },
+  trace:
+   [ { column: 14,
+       file: 'C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\startup\\db.js',
+       function: 'module.exports',
+       line: 8,
+       method: 'exports',
+       native: false },
+     { column: 24,
+       file: 'C:\\Users\\pro\\Desktop\\WORK\\RESTful-API\\index.js',
+       function: null,
+       line: 6,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 778,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 789,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 653,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 593,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 585,
+       method: '_load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.runMain',
+       line: 831,
+       method: 'runMain',
+       native: false },
+     { column: 19,
+       file: 'internal/bootstrap/node.js',
+       function: 'startup',
+       line: 283,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/bootstrap/node.js',
+       function: 'bootstrapNodeJSCore',
+       line: 623,
+       method: null,
+       native: false } ],
+  timestamp: '2021-11-27T23:33:52.828Z' }
+2021-11-27T23:36:12.574Z error: uncaughtException: dbURL is not defined
+ReferenceError: dbURL is not defined
+    at module.exports (C:\Users\pro\Desktop\WORK\RESTful-API\startup\db.js:8:14)
+    at Object.<anonymous> (C:\Users\pro\Desktop\WORK\RESTful-API\index.js:6:24)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
