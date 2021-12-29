@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "1234",
+    "dbURL":"mongo_db_url"
+  }

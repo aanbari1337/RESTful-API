@@ -9,15 +9,16 @@ const movies = require("../controllers/movies");
 const rentals = require("../controllers/rentals");
 const users = require("../controllers/users");
 const auth = require("../controllers/auth");
+const api = require("../config/const");
 
 module.exports = function (app) {
-  app.use(morgan("combined", { stream: winston.stream }));
+  //app.use(morgan("combined", { stream: winston.stream }));
   app.use(express.json());
-  app.use("/api/genres", genres);
-  app.use("/api/customers", customers);
-  app.use("/api/movies", movies);
-  app.use("/api/rentals", rentals);
-  app.use("/api/users", users);
-  app.use("/api/auth", auth);
+  app.use(`${api.genres}`, genres);
+  app.use(`${api.customers}`, customers);
+  app.use(`${api.movies}`, movies);
+  app.use(`${api.rentals}`, rentals);
+  app.use(`${api.users}`, users);
+  app.use(`${api.auth}`, auth);
   app.use(error);
 };
