@@ -12,7 +12,7 @@ const auth = require("../controllers/auth");
 const api = require("../config/const");
 
 module.exports = function (app) {
-  //app.use(morgan("combined", { stream: winston.stream }));
+  app.use(morgan("combined", { stream: winston.stream }));
   app.use(express.json());
   app.use(`${api.genres}`, genres);
   app.use(`${api.customers}`, customers);
